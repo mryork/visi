@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-extensions@6.2.7/dist/css/bulma-extensions.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+        <style>body { overflow-y: auto; overflow: hidden;}</style>
+    </head>
+    <body>
+        <div class="columns">
+            <div class="column">
+                <div class="container is-max-desktop" style="margin-top:2vh;">
+                    <h1 class="title has-text-centered is-size-1">Vision Test</h1>
+                    <p class="is-size-3" style="margin-left:2vw; margin-right: 2vw;">The following is a test of your visual capabilities using the <b>method of adjustments</b>. Please keep in mind that your score for this test is purely subjective, and can vary depending on your perception of stimulus. Please read the instructions below to get started.</p>
+                    <br>
+                    <p class="is-size-3" style="margin-left:2vw; margin-right: 2vw;"><b>Instructions:</b> In order to complete this test, please turn your monitor's brightness to 100%. Your goal is to adjust the slider shown until the two boxes on the left and right are the same color. When you perceive them as being the same color, simply press submit to go to the next sample. At the end, you will receive a percent score based on the average deviation from the correct answer. After this test is given to an appropriate number of people, we hope to use the results to find when a person's vision may be outside of the norm. Thank you for your participation, and you may begin below.</p>
+                </div>
+                <br>
+                <div class="container" style="border: 2px solid black; background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); height: 30vh;" id="bg">
+                    <div class="columns is-vcentered" style="height: 100%;">
+                        <div class="column">
+                            <center>
+                                <div style="background-color: red; width: 10%;" id="left">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <br>
+                                </div>
+                            </center>
+                        </div>
+                        <div class="column">
+                            <center>
+                                <div style="background-color: red; width: 10%" id="right">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <br>
+                                </div>
+                            </center>
+                        </div>
+                    </div>
+                    <input class="slider is-fullwidth is-large is-circle is-warning" step="1" min="0" max="100" value="50" type="range" id="slide">
+                </div>
+                
+            </div>
+        </div>
+        <center>
+            <div style="margin-top: 2vh;"><button id="butt" class="button is-dark">Submit</button></center></div>
+        
+            <div id="results" style="margin-top: 2vh">
+            </div>
+        </center>
+        </body>
+    <script src="https://cdn.jsdelivr.net/npm/bulma-extensions@6.2.7/dist/js/bulma-extensions.min.js"></script>
+    <script src="chroma.min.js"></script>
+    <script src="script.js"></script>
+</html>
